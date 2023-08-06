@@ -51,7 +51,7 @@
 import React from "react";
 import { Profile } from "components/Profile/Profile";
 import { Container } from "./App.styled";
-import user from 'Profile/user.json';
+import user from '../../components/';
 
 
 export const App = () => {
