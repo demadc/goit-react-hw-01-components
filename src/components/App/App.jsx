@@ -48,10 +48,10 @@
 //   avatar={user.avatar}
 //   stats={user.stats}
 // />
-import React from "react";
+// import React from "react";
 import { Profile } from "components/Profile/Profile";
-import { Container } from "./App.styled";
-import user from 'user.json';
+// import { Container } from "./App.styled";
+import user from 'components/user.json'
 
 
 export const App = () => {

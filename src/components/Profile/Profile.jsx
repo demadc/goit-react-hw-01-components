@@ -1,15 +1,25 @@
+// import React from 'react';
 import PropTypes from 'prop-types';
+import {
+    ProfileCard,
+    // Description,
+    // Avatar,
+    // Name,
+    // Tag,
+    // Location,
+    // StatsList,
+    // StatsItem,
+    // Label,
+    // Quantity,
+  } from './Profile.styled';
+
 
 export const Profile = ({username, tag, location, avatar, followers, views, likes}) => {
     //  console.log(user);
     return (
 <div class="profile">
   <div class="description">
-    <img
-      src={avatar}
-      alt="User avatar"
-      class="avatar"
-    />
+    <img src={avatar} alt="User avatar" class="avatar"/>
     <p class="name">{username}</p>
     <p class="tag">@{tag}</p>
     <p class="location">{location}</p>
