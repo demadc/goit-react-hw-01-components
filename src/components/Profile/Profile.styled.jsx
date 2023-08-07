@@ -6,35 +6,37 @@ export const ProfileCard = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  
-  margin: 0 auto;
-  margin-bottom: ${props => props.theme.space[5]}px;
-  padding: ${props => props.theme.space[4]}px;
 
-  max-width: 100%;
-  width: 360px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 25px;
+
+  text-align: center;
   
-  border-radius: ${props => props.theme.radii.medium};
-  box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
-  background-color: ${props => props.theme.colors.background};
+  box-shadow: 0 0 10px #c6cccced;
+  border-radius: 5px;
+ 
 `;
 
 export const Description = styled.div`
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-bottom: ${props => props.theme.space[4]}px;
+  
 `;
 
 export const Avatar = styled.img`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  
   height: 150px;
   width: 150px;
+  margin: 0 auto;
+  padding: 10px;
 
   border-radius: 50%;
   box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
@@ -45,66 +47,63 @@ export const Avatar = styled.img`
   }
 `;
 
-export const Info = styled.p`
-  color: ${props => props.theme.colors.accent};
-  text-shadow: 1px 1px 1px ${props => props.theme.colors.white};
-  font-family: ${props => props.theme.fonts.heading};
-  font-size: ${props => props.theme.fontSizes.m};
-`;
+export const Name = styled.p`
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #524a4d;
+  `;
 
-export const Name = styled(Info)`
-  color: ${props => props.theme.colors.accent};
-  font-size: ${props => props.theme.fontSizes.l};
+export const Tag = styled.p`
   font-weight: 500;
-`;
+  font-size: 20px;
+  color: #524a4d;
+  margin-bottom: 10px;
+  `;
 
-export const Tag = styled(Info)`
-  color: ${props => props.theme.colors.primary};
-`;
-
-export const Location = styled(Info)`
-  color: ${props => props.theme.colors.secondary};
-`;
+export const Location = styled.p`
+  font-weight: 700;
+  font-size: 20px;
+  color: #524a4d;
+  margin-bottom: 20px;
+  `;
 
 export const StatsList = styled.ul`
   display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  padding: ${props => props.theme.space[4]}px;
-  width: 100%;
-`;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin: auto;
+  padding: 0;
+  width: inherit;
+
+  background-color: #7e6f7449;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 0 10px #c6cccced;
+  &:hover {
+    background: #6bacdd;
+    box-shadow: inset -3px -3px 7px #65bfdf, inset 3px 3px 5px #5ab1f3;
+  }
+  `;
 
 export const StatsItem = styled.li`
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-width: 100%;
+  display: flex;
+  flex-direction: column;
 
-  &:hover {
-    background: #ecf0f3;
-    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
-  }
+  padding: 20px 0;
 
-  :not(:last-child){
-  border-right: 1px dotted ${props => props.theme.colors.primary};
-
-  }
+  
 `;
 
-export const StatsInfo = styled.span`
-  margin: 0px 5px;
-  color: ${props => props.theme.colors.primary};
-  font-size: 16px;
-`;
+export const Label = styled.span`
+  font-weight: 700;
+  font-size: 20px;
+  color: #524a4d8b;
+  `;
 
-export const Label = styled(StatsInfo)`
-  font-weight: 400;
-`;
-
-export const Quantity = styled(StatsInfo)`
-  color: ${props => props.theme.colors.secondary};
-  text-shadow: 1px 1px 1px #fff;
-  font-weight: ${props => props.theme.fontWeights.bold};
-`;
+export const Quantity = styled.span`
+  font-weight: 800;
+  font-size: 20px;
+  color: #524a4d;
+  `;
