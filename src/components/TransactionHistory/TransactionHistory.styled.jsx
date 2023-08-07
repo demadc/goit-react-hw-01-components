@@ -32,14 +32,7 @@ padding: 10px;
 `;
 
 export const Tbody = styled.tb`
-  :hover {
-   background-color: rgb(115, 120, 175);
--webkit-box-shadow: 0 6px 6px -6px #0E1119;
-     -moz-box-shadow: 0 6px 6px -6px #0E1119;
-          box-shadow: 0 6px 6px -6px #0E1119;
-           color: #ffffff;
-    text-shadow: .0625rem .0625rem .0625rem #400075;
-  }
+ background-color: tomato;
 `;
 
 export const Item = styled.td`
