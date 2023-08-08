@@ -20,7 +20,7 @@ export const Status = styled.span`
   margin-right: 20px;
   
   border-radius: 50%;
-  background-color: ${props => (props.isOnline  ? 'green' : 'red')}
+  background-color: ${props => (props.$isonline ==='true' ? 'green' : 'red')}
 `;
 
 export const Avatar = styled.img`

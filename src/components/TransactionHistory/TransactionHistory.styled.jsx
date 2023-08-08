@@ -22,10 +22,12 @@ export const Thead = styled.thead`
 
 export const HeadItem = styled.th`
   padding: 10px;
+  
 `;
 
 export const Tr = styled.tr`
-  text-shadow: .0625rem .0625rem .0625rem #4b3caf;
+  color: #080808;
+  text-align: center;
 `;
 
 export const Tbody = styled.tbody`
@@ -33,12 +35,12 @@ export const Tbody = styled.tbody`
   font-size: 15px;
   color: white;
     
-  background-color: #5555d8;
+  background-color: #ceced8;
 `;
 
 
 export const BodyItem = styled.td`
-  width: 100%;
+  width: inherit;
   padding: 10px;
   
   font-weight: 700;
