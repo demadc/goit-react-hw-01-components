@@ -8,9 +8,6 @@ import { FriendList } from "components/FriendList/FriendList";
 import transactions from 'components/data/transactions.json'
 import {TransactionHistory} from 'components/TransactionHistory/TransactionHistory'
 
-// import { Container } from "./App.styled";
-
-
 
 export const App = () => {
     return (
@@ -25,7 +22,7 @@ export const App = () => {
           />
           <Statistics title="Upload stats" stats={data} />
           <FriendList friends={friends} />
-          
+          <TransactionHistory items={transactions} />;
         </>
           
            
